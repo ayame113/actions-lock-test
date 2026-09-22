@@ -1,0 +1,12 @@
+on:
+  push:
+
+jobs:
+  basic:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Echo
+        uses: ./.github/actions/echo
